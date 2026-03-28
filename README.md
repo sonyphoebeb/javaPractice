@@ -1,33 +1,49 @@
-## 1. Sum of digits:
-      int n = 1234
-      int sum = 0;
-      
-      while (n > 0){
-          int digit = n % 10;
-          sum += digit;
-          n = n/10;
-      }
-      
-      System.out.println(sum);
-  
-## 2. Prime Number
-    int n = 7;
+# Java Practice Repository
 
-        boolean flag = true;  
+Welcome to your Java practice environment. This project is structured to help you organize your learning and practice sessions.
 
-        if (n <= 1) {
-            flag = false;
-        } else {
-            for (int i = 2; i <= Math.sqrt(n); i++) {
-                if (n % i == 0) {
-                    flag = false;
-                    break;
-                }
-            }
-        }
+## 🚀 Getting Started
 
-        if (flag) {
-            System.out.println("Prime");
-        } else {
-            System.out.println("Not Prime");
-        }
+Since Java is not currently detected on your system, please follow these steps to set up your environment:
+
+### 1. Install Java JDK
+We recommend installing **JDK 21 (LTS)**. You can download it from:
+- [Microsoft Build of OpenJDK](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-21) (Recommended for Windows)
+- [Oracle JDK](https://www.oracle.com/java/technologies/downloads/#java21)
+
+### 2. Set Up Environment Variables
+After installation, ensure that the `bin` folder of your JDK is added to your system's `PATH` environment variable.
+- Example path: `C:\Program Files\Microsoft\jdk-21.x.x+x\bin`
+
+### 3. Verify Installation
+Open a new terminal and run:
+```bash
+java -version
+javac -version
+```
+
+## 📂 Project Structure
+
+- `src/basics/`: Core Java concepts (loops, conditionals, math).
+- `src/oops/`: Object-Oriented Programming exercises.
+- `src/collections/`: Java Collections Framework practice.
+- `src/leetcode/`: Algorithmic problem solving.
+
+## 🛠️ How to Run Programs
+
+To compile and run a program (e.g., `HelloWorld.java`):
+
+1. **Compile:**
+   ```bash
+   javac src/basics/HelloWorld.java
+   ```
+2. **Run:**
+   ```bash
+   java -cp src basics.HelloWorld
+   ```
+
+## ✍️ Current Practice Tasks
+
+- [x] **Sum of Digits:** Logic moved to [SumOfDigits.java](file:///d:/FullStackDevelopment/java_practice/javaPractice-1/src/basics/SumOfDigits.java)
+- [x] **Prime Number:** Logic moved to [PrimeNumber.java](file:///d:/FullStackDevelopment/java_practice/javaPractice-1/src/basics/PrimeNumber.java)
+- [ ] **Next:** Try implementing Fibonacci sequence or Palindrome check!
