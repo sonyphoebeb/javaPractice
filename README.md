@@ -1,9 +1,27 @@
+<<<<<<< HEAD
 # Java Practice Repository
+=======
+## 1. Sum of digits:
+      int n = sc.nextInt();
+      int sum = 0;
+      
+      while (n > 0){
+          int digit = n % 10;
+          sum += digit;
+          n = n/10;
+      }
+      
+      System.out.println(sum);
+  
+## 2. Prime Number
+    int n = sc.nextInt();
+>>>>>>> 0d6e2803c61c5e28924d5e9d7649a846a603c81c
 
 Welcome to your Java practice environment. This project is structured to help you organize your learning and practice sessions.
 
 ## 🚀 Getting Started
 
+<<<<<<< HEAD
 Since Java is not currently detected on your system, please follow these steps to set up your environment:
 
 ### 1. Install Java JDK
@@ -47,3 +65,23 @@ To compile and run a program (e.g., `HelloWorld.java`):
 - [x] **Sum of Digits:** Logic moved to [SumOfDigits.java](file:///d:/FullStackDevelopment/java_practice/javaPractice-1/src/basics/SumOfDigits.java)
 - [x] **Prime Number:** Logic moved to [PrimeNumber.java](file:///d:/FullStackDevelopment/java_practice/javaPractice-1/src/basics/PrimeNumber.java)
 - [ ] **Next:** Try implementing Fibonacci sequence or Palindrome check!
+=======
+        if (flag) {
+            System.out.println("Prime");
+        } else {
+            System.out.println("Not Prime");
+        }
+
+## 3. Fibonacci Series
+      int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        
+        for(int i = 1; i<=n; i++){
+            System.out.println(a + " ");
+            
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+>>>>>>> 0d6e2803c61c5e28924d5e9d7649a846a603c81c
