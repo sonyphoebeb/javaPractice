@@ -1,5 +1,5 @@
 ## 1. Sum of digits:
-  
+      int n = 1234
       int sum = 0;
       
       while (n > 0){
@@ -8,5 +8,5 @@
           n = n/10;
       }
       
-      System.out.println("Sum of digits is: " + sum);
+      System.out.println(sum);
   
