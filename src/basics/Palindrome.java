@@ -2,13 +2,14 @@ package basics;
 
 import java.util.*;
 
-public class ReverseNumber {
+public class Palindrome {
     public static void main(String[] args) {
 
         System.out.print("Enter a number: ");
-        
+
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int original = n;
         int rev = 0;
 
         while (n > 0) {
@@ -17,7 +18,11 @@ public class ReverseNumber {
             n = n / 10;
         }
 
-        System.out.println(rev);
+        if (original == rev) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not a Palindrome");
+        }
         sc.close();
     }
 }
