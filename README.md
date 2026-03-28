@@ -1,5 +1,5 @@
 ## 1. Sum of digits:
-      int n = 1234
+      int n = sc.nextInt();
       int sum = 0;
       
       while (n > 0){
@@ -11,7 +11,7 @@
       System.out.println(sum);
   
 ## 2. Prime Number
-    int n = 7;
+    int n = sc.nextInt();
 
         boolean flag = true;  
 
@@ -30,4 +30,17 @@
             System.out.println("Prime");
         } else {
             System.out.println("Not Prime");
+        }
+
+## 3. Fibonacci Series
+      int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        
+        for(int i = 1; i<=n; i++){
+            System.out.println(a + " ");
+            
+            int next = a + b;
+            a = b;
+            b = next;
         }
